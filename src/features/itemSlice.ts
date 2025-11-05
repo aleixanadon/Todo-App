@@ -9,11 +9,11 @@ interface ItemState {
 
 const initialState: ItemState = {
   value: [
-    {
-      id: uuidv4(),
-      text: "item 1",
-      date: new Date(),
-    }
+    // {
+    //   id: uuidv4(),
+    //   text: "item 1",
+    //   date: new Date(),
+    // }
   ]
 }
 
