@@ -14,8 +14,8 @@ const TodoList: React.FC<TodoListProps> = ({ items = [] }) => {
     items.length === 0 ? (
       <>No items in the list</>
     ) : (
-      <ul className="list-group list-group-numbered">
-      {
+      <ul className="list-group shadow-sm">
+      { 
         items.map((item, index) => (
             <TodoItem {...item} key={index} />
         ))

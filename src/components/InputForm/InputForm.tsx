@@ -19,7 +19,7 @@ const InputForm = () => {
   }
 
   return (
-    <form className="input-group" onSubmit={handleSubmit}>
+    <form className="input-group shadow-sm" onSubmit={handleSubmit}>
       <input 
         type="text"
         className="form-control"

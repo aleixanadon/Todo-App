@@ -2,6 +2,7 @@ import type { Item } from "../../interfaces/Item";
 import DeleteButton from "../DeleteButton/DeleteButton";
 
 const TodoItem: React.FC<Item> = ({ id, text, date }) => {
+  
   const [day, month, year] = [
     date.getDate(),
     date.getMonth() + 1,
@@ -10,6 +11,7 @@ const TodoItem: React.FC<Item> = ({ id, text, date }) => {
 
   return (
     <li className="list-group-item d-flex justify-content-between align-items-center gap-2">
+      <input type="checkbox" className="form-check-input" />
       <div className="ms-2 me-auto fw-medium">{text}</div>
       <span className="badge text-bg-primary rounded-pill">
         {day}/{month}/{year}
