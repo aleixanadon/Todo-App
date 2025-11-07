@@ -20,7 +20,11 @@ function App() {
       <TodoList items={itemsNotDone} />
       {
         itemsDone.length > 0 ? (
-          <TodoList items={itemsDone} />
+          <div>
+            <hr />
+            <div className='text-start pb-3'>Tasks done:</div>
+            <TodoList items={itemsDone} />
+          </div>
         ) : (
           <></>
         )

@@ -10,16 +10,18 @@ const TodoList: React.FC<TodoListProps> = ({ items = [] }) => {
   useEffect(() => {}, [items]);
 
   if (items.length === 0) {
-    return <>No items in the list</>;
+    return <div className="text-center">No tasks to do</div>;
   }
 
   if (items.length > 0) {
     return (
-      <ul className="list-group shadow-sm">
-        {items.map((item, index) => (
-          <TodoItem {...item} key={index} />
-        ))}
-      </ul>
+      <div>
+        <ul className="list-group shadow-sm">
+          {items.map((item, index) => (
+            <TodoItem {...item} key={index} />
+          ))}
+        </ul>
+      </div>
     );
   }
 };

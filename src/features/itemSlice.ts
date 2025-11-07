@@ -11,16 +11,16 @@ const initialState: ItemState = {
   value: [],
 };
 
-for (let i = 0; i<10; i++) {
-  initialState.value.push(
-    {
-      id: uuidv4(),
-      text: `item ${i}`,
-      date: new Date(),
-      isDone: false,
-    },
-  )
-}
+// for (let i = 0; i<1; i++) {
+//   initialState.value.push(
+//     {
+//       id: uuidv4(),
+//       text: `item ${i}`,
+//       date: new Date(),
+//       isDone: false,
+//     },
+//   )
+// }
 
 export const itemSlice = createSlice({
   name: "items",
